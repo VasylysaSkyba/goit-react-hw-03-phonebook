@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
+import Notification from './Notification';
 
 class App extends Component {
   state = {
@@ -21,6 +22,12 @@ class App extends Component {
     const parsedContacts = JSON.parse(contacts);
     if (parsedContacts) {
       this.setState({contacts: parsedContacts});
+    }
+  }
+
+  componentDidUpdate(prevProps, prvState) {
+    if (this.state.contacts !== prvState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
   }
 
