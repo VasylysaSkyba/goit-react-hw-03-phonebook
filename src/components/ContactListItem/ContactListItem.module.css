@@ -1,0 +1,41 @@
+.item {
+    background-color: #fff;
+    border: 1px solid rgb(16, 17, 17);
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+  }
+  
+  .buttonDelete {
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: #636a71;
+    background-image: linear-gradient(315deg, #f6b041 0%, #be570e 74%);
+  
+    border: none;
+  }
+  
+  .buttonDelete:hover,
+  .buttonDelete:focus {
+    background-color: #b8d6f9;
+    background-image: linear-gradient(315deg, #e4c782 0%, #c98f75 74%);
+  }

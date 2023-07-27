@@ -1,0 +1,62 @@
+.form {
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(27, 28, 30);
+    padding: 20px;
+    border-radius: 4px;
+    
+  }
+  
+  .label {
+    margin-bottom: 10px;
+  }
+  
+  .inputName {
+    margin-left: 28px;
+    border-width: 1px;
+    border-color: rgb(73, 76, 79);
+    font-size: 18px;
+  }
+  
+  .inputNumber {
+    composes: inputName;
+    margin-left: 10px;
+  }
+  
+  .inputName:focus,
+  .inputName:hover,
+  .inputName:active {
+    outline-color: rgb(80, 83, 86);
+  }
+  
+  .buttonAdd {
+    width: 300px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: #777c81;
+    background-image: linear-gradient(315deg, #e26b1c 0%, #703c22 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  
+  .buttonAdd:hover,
+  .buttonAdd:focus {
+    background-color: #0b0b0b;
+    background-image: linear-gradient(315deg, #e4c782 0%, #c98f75 74%);
+  }
